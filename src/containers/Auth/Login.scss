@@ -1,0 +1,79 @@
+.login-background{
+    // background: rgb(34,193,195);
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(34,193,195,1) 0%,     rgba(253,187,45,1) 100%);
+    .login-container{
+        background-color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 450px;
+        width: 400px;
+        margin: auto;
+        border-radius: 10px;
+        .login-content{
+            padding: 10px;
+            .login-text{
+                text-align: center;
+                font-size: 24px;
+                font-weight: 600;
+                padding-top: 10px;
+
+            }
+            .login-input{
+                margin: 7px 0;
+            }
+
+            .login-btn{
+                width: 100%;
+                margin: 10px 0;
+                height: 35px;
+                border-radius: 15px;
+                border: none;
+                outline: none;
+                background: linear-gradient(135deg, rgba(34,193,195,1) 0%,     rgba(253,187,45,1) 100%);
+                color: white;
+                font-size: 16px;
+
+            }
+            .forgot-password{
+                font-size: 12px;
+            }
+
+            .Social-login{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                margin-top: 10px;
+            
+                .google{
+                    font-size: 30px;
+                    background-color: red;
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    margin-right: 10px;
+                }
+
+                .facebook{
+                    font-size: 30px;
+                    background-color: rgb(6, 107, 190);
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                }
+            }
+        }
+       
+    }
+}
