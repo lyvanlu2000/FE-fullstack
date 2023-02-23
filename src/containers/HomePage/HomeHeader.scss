@@ -1,4 +1,8 @@
 .home-header-container{
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 10000;
     height: 70px;
     width: 100%;
     padding: 0 250px;
@@ -153,6 +157,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        padding-bottom: 10px;
     
         .option{
             text-align: center;
@@ -178,7 +183,7 @@
                 }
 
                 .text-child{
-                    font-size: 20px;
+                    font-size: 22px;
                     font-weight: 400;
                     cursor: pointer;
                     
