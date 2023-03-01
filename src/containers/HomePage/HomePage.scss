@@ -32,6 +32,11 @@
     font-family: FontAwesome !important;
     color: white !important;
 }
+
+.slick-disabled{
+    display: none !important;
+}
+
 .section-share {
     &.section-specialty{
         background: #f5f5f5;
@@ -57,7 +62,6 @@
         margin-bottom: 20px;
         margin-top: 20px;
         .title{
-            
             height: 40px;
             width: 75%;
             .btn-title{
@@ -74,6 +78,7 @@
                 }
             }
             .child-title{
+                margin-top: 5px;
                 font-size: 25px;
                 font-weight: 600;
                 float: left;
@@ -84,28 +89,29 @@
         
     }
     .section-content{
-        height: 100%;
+        height: 70%;
         margin: 0 auto;
         width: 75%;
 
-
-        
-
             .img-customize{  
+                
                 &:hover{
                     color:#0dcaf0;
                 }
                  img{
-                    height: 170px;
+                    border: 1px solid gray;
+                    height: 190px;
                     width: 330px;
                  }
                  
                  &.outstanding-doctor{
                     border: 0.2px solid gray;
                     background: rgb(236, 231, 231);
+                    height: 190px;
+                    padding-top: 15px;
                     
-                    
-                    img{
+                    .img{
+
                         width: 120px !important;
                         height: 120px !important;
                         margin: 0 auto;

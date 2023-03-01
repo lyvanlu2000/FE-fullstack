@@ -31,9 +31,23 @@ const getAllCodeService=(inputType)=>{
     return axios.get(`/api/allcode?type=${inputType}`)
 }
 
+const getTopDoctorHomeService=(limit)=>{
+    return axios.get(`/api/top-doctor-home?limit=${limit}`)
+}
+
+const getAllDoctors=()=>{
+    return axios.get(`/api/get-all-doctors`)
+}
+
+const saveDetailDoctorService=(data)=>{
+    return axios.post('/api/save-infor-doctor',data)
+}
+
 export {handleLogin,getAllUsers,
     createNewUserService,deleteUserService,
-    editUserService, getAllCodeService} 
+    editUserService, getAllCodeService,getTopDoctorHomeService,
+    getAllDoctors,saveDetailDoctorService
+} 
 
 
 

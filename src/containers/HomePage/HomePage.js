@@ -15,15 +15,17 @@ import "slick-carousel/slick/slick-theme.css";
 
 class HomePage extends Component {
 
+    // handleAfterChange=(event,slick,currentSlick)=>{
+
+    // }
     render() {
         let settings ={
             dots:false,
-            infinite:true,
+            infinite:false,
             speed:500,
             slidesToShow:4,
             slidesToScroll:1,
-            // nextArrow: <SampleNextArrow />,
-            // prevArrow: <SamplePrevArrow />
+            // afterChange:this.handleAfterChange
            }
 
         return (

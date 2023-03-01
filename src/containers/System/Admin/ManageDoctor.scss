@@ -1,0 +1,42 @@
+.manage-doctor-container{
+    padding: 20px;
+    .manage-doctor-title{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        color: red;
+        margin: 15px 0;
+    }
+
+    .more-infor{
+        display: flex;
+        gap: 15px;
+        padding-bottom: 15px;
+        .content-left{
+            width: 40% ;
+        }
+
+        .content-right{
+            width: 60%;
+        }
+
+    }
+
+    .save-content-doctor{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background-color: rgb(17, 92, 189);
+        color: azure;
+        cursor: pointer;
+        opacity: 0.7;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+
+}
