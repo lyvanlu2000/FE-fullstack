@@ -6,7 +6,12 @@ import Slider from "react-slick";
 import OutStandingDoctorImg from "../../../assets/outstandingdoctor/bs.jpg";
 import * as actions from "../../../store/actions";
 import {LANGUAGES} from '../../../utils'
+import { withRouter} from "react-router";
+
+
 class OutStandingDoctor extends Component {
+  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -24,6 +29,11 @@ class OutStandingDoctor extends Component {
 
   componentDidMount() {
     this.props.loadTopDoctors();
+  }
+
+  handleViewDetailDoctor = (doctor) =>{
+    console.log('check detail doctor',doctor)
+    this.props.history.push(`/detail-doctor/${doctor.id}`)
   }
 
   render() {
@@ -57,7 +67,9 @@ class OutStandingDoctor extends Component {
                 let nameEn=`${item.positionData.valueEn},${item.firstName} ${item.lastName}`;
                 return (
                   <div className="outer-bg">
-                    <div className="img-customize outstanding-doctor">
+                    <div className="img-customize outstanding-doctor"
+                    onClick={()=>this.handleViewDetailDoctor(item)}
+                    >
                       {/* <img src={item.image} /> */}
                       <div className="img" style={{backgroundImage: `url(${imageBase64})`}}>
                       
@@ -93,4 +105,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(OutStandingDoctor);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(OutStandingDoctor)) 
