@@ -66,9 +66,10 @@ class OutStandingDoctor extends Component {
                 let nameVi=`${item.positionData.valueVi},${item.lastName} ${item.firstName} `;
                 let nameEn=`${item.positionData.valueEn},${item.firstName} ${item.lastName}`;
                 return (
-                  <div className="outer-bg">
+                  <div className="outer-bg" key={index}>
                     <div className="img-customize outstanding-doctor"
                     onClick={()=>this.handleViewDetailDoctor(item)}
+                    
                     >
                       {/* <img src={item.image} /> */}
                       <div className="img" style={{backgroundImage: `url(${imageBase64})`}}>

@@ -77,6 +77,12 @@ class Login extends Component {
     })
   }
 
+  handleKeyDown=(event)=>{
+    if(event.key==='Enter'){
+      this.handleLogin();
+    }
+  }
+
   render() {
 
 
@@ -93,6 +99,7 @@ class Login extends Component {
                 placeholder="Your name"
                 value={this.state.username}
                 onChange={(event)=>this.handleOnChangeUsername(event)}
+                onKeyDown={(event)=>this.handleKeyDown(event)}
               />
             </div>
             <div className="col-12 form-group login-input">
@@ -103,7 +110,7 @@ class Login extends Component {
                 type={this.state.isShowPassword ? "text" : "password"}
                 placeholder="Your password"
                 onChange={(event)=>this.handleOnChangePassword(event)}
-
+                onKeyDown={(event)=>this.handleKeyDown(event)}
               />
               <span
                 onClick={()=>this.handleShowHidePassword()}
