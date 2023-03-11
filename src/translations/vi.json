@@ -69,6 +69,39 @@
         "choose-doctor":"Chọn bác sĩ",
         "choose-date":"Chọn ngày",
         "save":"Lưu lịch khám"
+    },
+
+    "patient":{
+        "detail-doctor":{
+            "schedule":"Lịch khám",
+            "no-schedule":"Bác sĩ không có lịch hẹn trong ngày này",
+            "choose":"Chọn",
+            "book-free":"đặt (miễn phí)"
+        },
+        "extra-infor":{
+            "text-address":"Địa chỉ khám",
+            "text-price":"Giá khám",
+            "payment":"Khách hàng có thể thanh toán bằng phương thức",
+            "more":"Xem thêm",
+            "hide":"Ẩn bảng giá"
+        }
+        
+    },
+
+    "admin":{
+        "manage-doctor":{
+            "title":"Tạo thêm thông tin bác sĩ",
+            "select-doctor":"Chịn bác sĩ",
+            "intro":"Thông tin giới thiệu",
+            "add":"Tạo thông tin",
+            "save":"Lưu thông tin",
+            "price":"Giá khám",
+            "payment":"phương thức thanh toán",
+            "province":"Tỉnh thành",
+            "nameClinic":"Tên phòng khám",
+            "addressClinic":"Địa chỉ phòng khám",
+            "note":"Ghi chú"
+        }
     }
     
 }

@@ -9,7 +9,7 @@ import DatePicker from '../../../components/Input/DatePicker';
 import moment from 'moment';
 import {  toast } from 'react-toastify';
 import _ from 'lodash';
-import {saveBulkScheduleDoctor} from '../../../services/userService'
+import {saveBulkScheduleDoctor} from '../../../services/userService';
 
 
 class ManageSchedule extends Component {
@@ -142,8 +142,13 @@ class ManageSchedule extends Component {
             formatedDate:formatedDate
 
         })
-        console.log('check res: save bulk schedule',res)
-        console.log('check result',result)
+        
+        if(res && res.errCode ===0){
+            toast.success("save infor succeed")
+        }else{
+            toast.error("error save bulk schedule doctor")
+            console.log('erorr saveBulkScheduleDoctor')
+        }
 
       }
 
@@ -151,7 +156,8 @@ class ManageSchedule extends Component {
         
         let {rangeTime}=this.state;
         let {language}=this.props
-        console.log('check state ',rangeTime)
+        let yesterday = new Date(new Date().setDate(new Date().getDate()-1));
+
         return (
             <>
             
@@ -175,7 +181,7 @@ class ManageSchedule extends Component {
                                 onChange={this.handleOnChangeDatePicker}
                                 className="form-control"
                                 value={this.state.currentDate}
-                                minDate={new Date()}
+                                minDate={yesterday}
                                 
                            />
                         </div>

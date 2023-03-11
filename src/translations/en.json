@@ -65,5 +65,38 @@
         "choose-doctor":"Select doctor",
         "choose-date":"Select date",
         "save":"Save"
+    },
+
+    
+    "patient":{
+        "detail-doctor":{
+            "schedule":"Schedule",
+            "no-schedule":"The doctor does not have an appointment for this day",
+            "choose":"Choose",
+            "book-free":"and book (free)"
+        },
+        "extra-infor":{
+            "text-address":"Address of examination",
+            "text-price":"Price",
+            "payment":"Customers can choose payment method",
+            "more":"More infor",
+            "hide":"Hide infor"
+        }
+    },
+
+    "admin":{
+        "manage-doctor":{
+            "title":"Create doctor infomation",
+            "select-doctor":"Select doctor ",
+            "intro":"Introduction",
+            "add":"Create infor",
+            "save":"Save infor",
+            "price":"Price",
+            "payment":"Payment method",
+            "province":"Province",
+            "nameClinic":"CLinic's name",
+            "addressClinic":"Clinic's address",
+            "note":"Note"
+        }
     }
 }
