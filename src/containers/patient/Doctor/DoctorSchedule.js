@@ -7,6 +7,7 @@ import localization from "moment/locale/vi";
 import { LANGUAGES } from "../../../utils";
 import { getScheduleDoctorByDate } from "../../../services/userService";
 import { FormattedMessage } from "react-intl";
+import BookingModal from "./Modal/BookingModal";
 
 class DoctorSchedule extends Component {
   constructor(props) {
@@ -14,6 +15,8 @@ class DoctorSchedule extends Component {
     this.state = {
       allDays: [],
       allAvailablleTime: [],
+      isOpenModalBooking:false,
+      dataScheduleTimeModal:{}
     };
   }
 
@@ -102,11 +105,26 @@ class DoctorSchedule extends Component {
     }
   };
 
+  handleCLickScheduleTime=(time)=>{
+    this.setState({
+      isOpenModalBooking:true,
+      dataScheduleTimeModal:time
+    })
+    // console.log('check time:',time)
+  }
+
+  closeBookingModal=()=>{
+    this.setState({
+      isOpenModalBooking:false
+    })
+  }
+
   render() {
-    let { allDays, allAvailablleTime } = this.state;
+    let { allDays, allAvailablleTime, isOpenModalBooking, dataScheduleTimeModal } = this.state;
     let { language } = this.props;
 
     return (
+      <>
       <div className="doctor-schedule-container">
         <div className="all-schedule">
           <select onChange={(event) => this.handleOnchangeSelect(event)}>
@@ -143,6 +161,7 @@ class DoctorSchedule extends Component {
                   <button
                     key={index}
                     className={language === LANGUAGES.VI ? "btn-vie" : "btn-en"}
+                    onClick={()=>this.handleCLickScheduleTime(item)}
                   >
                     {timeDisplay}
                   </button>
@@ -167,6 +186,12 @@ class DoctorSchedule extends Component {
           </div>
         </div>
       </div>
+      <BookingModal
+        isOpenModal={isOpenModalBooking} //different name
+        closeBookingModal={this.closeBookingModal} //same name
+        dataTime={dataScheduleTimeModal}
+      />
+      </>
     );
   }
 }

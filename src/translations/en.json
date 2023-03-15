@@ -81,6 +81,18 @@
             "payment":"Customers can choose payment method",
             "more":"More infor",
             "hide":"Hide infor"
+        },
+        "booking-modal":{
+            "title":"Thông tin đặt lịch khám bệnh",
+            "fullname":"Fullname",
+            "phonenumber":"Phone number",
+            "email":"Email",
+            "address":"Address",
+            "reason":"Reason for medical examination",
+            "birthday":"Date of birth",
+            "gender":"Genders",
+            "btnConfirm":"Confirm",
+            "btnCancel":"Cancel"
         }
     },
 
