@@ -57,7 +57,8 @@
     },
     "homepage":{
         "outstanding-doctor":"Last week's feature doctor",
-        "more-infor":"More infor"
+        "more-infor":"More infor",
+        "specialty-popular":"Popular specialties"
     },
 
     "manage-schedule":{
@@ -108,7 +109,9 @@
             "province":"Province",
             "nameClinic":"CLinic's name",
             "addressClinic":"Clinic's address",
-            "note":"Note"
+            "note":"Note",
+            "specialty":"Specialty",
+            "select-clinic":"Clinic"
         }
     }
 }

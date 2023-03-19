@@ -14,6 +14,7 @@ import HomePage from './HomePage/HomePage';
 import CustomScrollbars from '../../src/components/CustomScrollbars.js'
 import DetailDoctor from './patient/Doctor/DetailDoctor';
 import Doctor from '../routes/Doctor';
+import DetailSpecialty from './patient/Specialty/DetailSpecialty';
 
 class App extends Component {
 
@@ -52,6 +53,7 @@ class App extends Component {
                                 
                                 <Route path={path.HOMEPAGE} component={HomePage} />
                                 <Route path={path.DETAIL_DOCTOR} component={DetailDoctor} />
+                                <Route path={path. DETAIL_SPECIALTY} component={DetailSpecialty} />
 
 
                             </Switch>

@@ -92,16 +92,16 @@
         height: 70%;
         margin: 0 auto;
         width: 75%;
-
+        
             .img-customize{  
-                
+                cursor: pointer;   
+                outline: none;
                 &:hover{
                     color:#0dcaf0;
                 }
                  img{
-                    border: 1px solid gray;
                     height: 190px;
-                    width: 330px;
+                    width: 340px;
                  }
                  
                  &.outstanding-doctor{

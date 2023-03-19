@@ -18,8 +18,16 @@ class DoctorExtraInfor extends Component {
   }
 
   async componentDidMount() {
-    let { language } = this.props;
-    
+    // let { language } = this.props;
+    if(this.props.doctorIdFromParent){
+        let res=await getExtraInforDoctorById(this.props.doctorIdFromParent)
+        if(res && res.errCode===0){
+            this.setState({
+                extraInfor:res.data
+            })
+        }
+    }
+
   }
 
 
@@ -121,7 +129,7 @@ class DoctorExtraInfor extends Component {
                         </div>
                 </div>
                 
-                <div className="payment"><FormattedMessage id="patient.extra-infor.payment"/> : 
+                <div className="payment"><FormattedMessage id="patient.extra-infor.payment"/>
                 {extraInfor && extraInfor.paymentTypeData && language===LANGUAGES.VI ? 
                 extraInfor.paymentTypeData.valueVi 
                 :
