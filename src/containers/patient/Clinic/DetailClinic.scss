@@ -1,0 +1,125 @@
+.detail-clinic-container{
+    margin-top: 70px;
+    position: relative;
+    top: 0;
+    left: 0;
+    .box{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 450px;
+        background-image: url(https://cdn.luatvietnam.vn/uploaded/Images/Original/2020/12/24/benh-vien_2808175558_2412092857.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+    .header-detail-clinic{
+        background-color: white ;
+        
+        position: absolute;
+        top: 350px;
+        left: 25%;
+        
+        .content-header{
+            
+            box-shadow: 0 1px 6px #20212447;
+            display: flex;
+            width: 1000px;
+            align-items: center;
+            padding: 10px;
+            
+            .content-left{
+                
+                width: 100px;
+                height: 100px;
+                border: 1px solid #ddd;
+                background-color: white;
+                background-size:contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+            }
+            .content-right{
+                padding: 0 40px;
+            }
+            
+        }
+        .open-talk{
+            margin-top: 10px;
+            box-shadow: 0 1px 6px #20212447;
+            display: flex;
+            width: 1000px;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(255, 236, 178); ;
+            
+        }
+        
+        
+        
+        
+    }
+    .intro-clinic{
+        background-color: white ;
+        
+        margin-top: 150px;  
+        padding: 0 150px;
+    }
+    .search-sp-doctor{
+        margin: 20px 0;
+        padding: 0 50px;
+        
+        .select-province{
+            text-align: center;
+            width: 150px;
+            height: 30px;
+            outline: none;
+            border: none;
+            box-shadow: 0 1px 6px #20212447;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    .body-detail-clinic{
+        padding: 0 50px;
+        .each-doctor{
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 6px #20212447;
+            display: flex;
+            min-height: 300px;
+            margin: 15px 0;
+            padding: 10px;
+
+            .content-left-detail{
+                width: 50%;
+                border-right: 1px solid #ddd;
+                margin-right: 10px;
+                
+            }
+    
+            .content-right-detail{
+                 width: 50%;
+                 
+                .doctor-schedule{
+                    .doctor-schedule-container{
+                        border-right: unset !important;
+                    }
+                }
+                .doctor-extra-infor{
+                    border-top: 1px solid #ddd;
+                    margin-top: 10px;
+                    .doctor-extra-infor-container{
+                        padding-left: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+h1,h2,h3{
+    font-size: 16px;
+    font-weight: 600;
+}

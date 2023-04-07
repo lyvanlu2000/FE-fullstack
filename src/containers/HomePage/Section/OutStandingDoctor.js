@@ -72,13 +72,15 @@ class OutStandingDoctor extends Component {
                     
                     >
                       {/* <img src={item.image} /> */}
+                      
                       <div className="img" style={{backgroundImage: `url(${imageBase64})`}}>
                       
                       </div>
+                      
 
                       <div className="position text-center">
                         <div>{language === LANGUAGES.VI ? nameVi : nameEn}</div>
-                        <div>Cơ Xương Khớp 1</div>
+                        {/* <div>Cơ Xương Khớp 1</div> */}
                       </div>
                     </div>
                   </div>

@@ -17,7 +17,6 @@
 
 }
 .slick-next{
-    
     right: 0 !important;
     height: 50px !important;
     width: 50px !important;
@@ -38,14 +37,22 @@
 }
 
 .section-share {
-    &.section-specialty{
+    // &.section-specialty{
+    //     background: #f5f5f5;
+    // }
+    &.section-medical-facility{
         background: #f5f5f5;
     }
-    &.section-outstanding-doctor{
+    // &.section-outstanding-doctor{
+    //     background: #f5f5f5;
+    // }
+    &.section-HandBook{
         background: #f5f5f5;
+
     }
+    
     &.section-about{
-        background: #f5f5f5;
+        // background: #f5f5f5;
         height: 500px !important;
     }
 
@@ -79,7 +86,7 @@
             }
             .child-title{
                 margin-top: 5px;
-                font-size: 25px;
+                font-size: 20px;
                 font-weight: 600;
                 float: left;
                 color: black;
@@ -94,30 +101,63 @@
         width: 75%;
         
             .img-customize{  
+               
                 cursor: pointer;   
                 outline: none;
+                padding: 8px ;
+                
                 &:hover{
                     color:#0dcaf0;
                 }
-                 img{
+                .inside{
                     height: 190px;
-                    width: 340px;
+                    margin-bottom: 5px;
+                 .img{
+                    height: 100%;
+                    width: 100%;
                  }
-                 
-                 &.outstanding-doctor{
-                    border: 0.2px solid gray;
-                    background: rgb(236, 231, 231);
-                    height: 190px;
-                    padding-top: 15px;
-                    cursor: pointer;
+                }
+                 &.section-medical-facility{
                     
-                    .img{
+                    .inside{
+                        height: 190px !important;
+                        background-color: white !important;
+                        padding: 20px !important;
+                        .img{ 
+                            background-size:contain !important;
+                            // margin:0 auto;
+                            width: 278px !important;
+                            height: 150px !important;                        
+                        }
+                    }
+                    
+                 }
+                 &.outstanding-doctor{
+                    border: 0.2px solid #ddd;
+                    height: 190px;                    
+                    cursor: pointer;
 
+                    .img{
+                        background-size:contain;
                         width: 120px !important;
                         height: 120px !important;
-                        margin: 0 auto;
+                        margin: 5px auto;
                         border-radius: 50%;
                     }
+                 }
+
+                 &.section-HandBook{
+                    
+                    .inside{
+                        height: 190px !important;
+                        
+                        .img{ 
+                            margin:0 auto;
+                            width: 100% !important;
+                            height: 160px !important;                        
+                        }
+                    }
+                    
                  }
             }
          
@@ -126,7 +166,7 @@
     
 }
 .outer-bg{
-    padding-right: 25px;
+    padding-right: 15px;
 }
 
 .home-footer{

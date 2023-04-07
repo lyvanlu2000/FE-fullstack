@@ -46,7 +46,9 @@ class Specialty extends Component {
                                 <div className="img-customize" key={index}
                                 onClick={()=>this.handleViewDetailSpecialty(item)}
                                 >
-                                    <img src={item.image}/>
+                                    <div className='inside'>
+                                    <img className="img" src={item.image}/>
+                                    </div>
                                     <div className="specialty-name">{item.name}</div>
                                 </div>
                             )
